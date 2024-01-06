@@ -18,10 +18,12 @@ O componente `Perfil` exibe informações do perfil do usuário, incluindo o ava
 
 O componente `ReposList` busca e exibe a lista de repositórios do GitHub associados ao nome de usuário fornecido. Ele inclui um indicador de carregamento durante a busca de dados.
 
+Se o nome de usuário fornecido não for válido, a aplicação apresentará uma mensagem indicando que o usuário é inválido. Nesse caso, sugere-se que o usuário revise o nome informado e tente novamente.
+
 ### Instruções de Uso
 
 1. Abra a aplicação React em um ambiente de desenvolvimento.
 2. Insira seu nome de usuário do GitHub no campo fornecido.
-3. Após inserir um nome de usuário com mais de 4 caracteres, as informações do perfil e a lista de repositórios serão exibidas.
+3. Após inserir um nome de usuário com mais de 4 caracteres, as informações do perfil e a lista de repositórios serão exibidas. Em caso de um nome de usuário inválido, a aplicação fornecerá uma mensagem de erro.
 
 Esta aplicação é uma ferramenta simples para explorar o perfil e os repositórios do GitHub de um usuário de forma rápida e intuitiva. Sinta-se à vontade para personalizar e expandir conforme necessário para atender às suas necessidades específicas.
