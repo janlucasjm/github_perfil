@@ -1,0 +1,21 @@
+.searchName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 18vh 0;
+    padding: 180px 0;
+    font-size: 1.75rem;
+    font-weight: bold;
+    background-color: var(--corPrincipal);
+    color: var(--corSecundaria);
+}
+
+.searchName input {
+    margin-top: 16px;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: var(--corPrincipal);
+    color: var(--corSecundaria);
+    border-color: var(--corSecundaria);
+}

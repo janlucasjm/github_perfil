@@ -1,0 +1,30 @@
+.header {
+    background-color: var(--corPrincipal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0 40px;
+    margin-bottom: 80px;
+}
+
+.header input {
+    border-radius: 1rem;
+    text-align: center;
+    margin-top: 12px;
+    background-color: var(--corPrincipal);
+    color: var(--corSecundaria);
+    border: 2px solid #AAD9BB;
+}
+
+.avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 2px solid var(--corSecundaria);
+}
+
+.name {
+    font-size: 18px;
+    color: var(--corSecundaria);
+    margin-top: 8px;
+}
