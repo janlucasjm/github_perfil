@@ -8,7 +8,6 @@ const ReposList = ({nomeUsuario}) => {
     const [ocorreuError, setOcorreuError] = useState(false);
 
     const myRequest = new Request(`https://api.github.com/users/${nomeUsuario}/repos`);
-    const messageError = 'Ocorreu um erro ao encontrar o usuário, tente novamente!';
 
     useEffect(() => {
         setEstaCarregando(true)
@@ -28,7 +27,6 @@ const ReposList = ({nomeUsuario}) => {
             }, 2000);
         })
         .catch(error => {
-            console.log(error)
             setOcorreuError(true);
         })
     }, [nomeUsuario])
@@ -37,7 +35,7 @@ const ReposList = ({nomeUsuario}) => {
         <>
             
             {ocorreuError ? (
-                <span className={styles.error}>{messageError}</span>
+                <span className={styles.error}>Ocorreu um erro ao encontrar o usuário, tente novamente!</span>
             ) : (
                 <div className="container">
                     {estaCarregando ? (
